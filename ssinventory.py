@@ -72,7 +72,7 @@ if __name__ == '__main__':
 	order = 10000
 	price = 1
 	penalty = 10
-	checktime = 1
+	checktime = 8
 	time = 500
 	mincost = 0
 	minlarge = 0
@@ -86,12 +86,12 @@ if __name__ == '__main__':
 	ax = fig.add_subplot(111, projection = "3d")
 	ax.set_title("checktime = {}".format(checktime))
 	
-	testtime = 20
-	step = 1500
+	testtime = 10
+	step = 10000
 	for t in range(testtime):
 		print("testtime {}".format(t))
 		count = 0
-		for large in range(90000, 201500, step):
+		for large in range(90000, 505000, step):
 			for small in range(45000, large, step):
 				inv = cInventory(small, large, large, holdingcost, order, price, penalty, checktime, time)
 				cost = inv.simulator()
