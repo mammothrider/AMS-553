@@ -73,7 +73,7 @@ class cInventory:
 			
 if __name__ == '__main__':
 	#def __init__(self, small, large, initial, holdingcost, order, price, penalty, checktime, testtime):
-	small = 85000
+	small = 120000
 	large = 140000
 	initial = large
 	holdingcost = 0.4

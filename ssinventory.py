@@ -91,7 +91,7 @@ if __name__ == '__main__':
 	for t in range(testtime):
 		print("testtime {}".format(t))
 		count = 0
-		for large in range(90000, 303000, step):
+		for large in range(90000, 203000, step):
 			for small in range(45000, large, step):
 				inv = cInventory(small, large, large, holdingcost, order, price, penalty, checktime, time)
 				cost = inv.simulator()
